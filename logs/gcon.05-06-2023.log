@@ -1,0 +1,6 @@
+2023-06-05 23:29:57,269 gcon INFO  [restartedMain] br.com.multiinovacoes.gcon.ServletInitializer: Starting ServletInitializer using Java 1.8.0_331 on DESKTOP-C9625DO with PID 4816 (C:\Desenvolvimento\workspace_spring\gcon\target\classes started by Welsson Cavalcante in C:\Desenvolvimento\workspace_spring\gcon)
+2023-06-05 23:29:57,274 gcon INFO  [restartedMain] br.com.multiinovacoes.gcon.ServletInitializer: The following profiles are active: oauth-security
+2023-06-05 23:30:09,909 gcon INFO  [restartedMain] br.com.multiinovacoes.gcon.ServletInitializer: Started ServletInitializer in 13.285 seconds (JVM running for 15.395)
+2023-06-05 23:47:02,581 gcon INFO  [restartedMain] br.com.multiinovacoes.gcon.ServletInitializer: Starting ServletInitializer using Java 1.8.0_331 on DESKTOP-C9625DO with PID 4816 (C:\Desenvolvimento\workspace_spring\gcon\target\classes started by Welsson Cavalcante in C:\Desenvolvimento\workspace_spring\gcon)
+2023-06-05 23:47:02,582 gcon INFO  [restartedMain] br.com.multiinovacoes.gcon.ServletInitializer: The following profiles are active: oauth-security
+2023-06-05 23:47:08,022 gcon INFO  [restartedMain] br.com.multiinovacoes.gcon.ServletInitializer: Started ServletInitializer in 5.548 seconds (JVM running for 1033.508)

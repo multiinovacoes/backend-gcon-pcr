@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true">
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+
+    <property name="LOGDIR" value="logs"/>
+    <property name="APP_NAME" value="gcon"></property>
+ 
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>%d ${APP_NAME} %-5level [%thread] %logger: %msg%n</Pattern>
+        </layout>
+    </appender>
+
+    <appender name="ROLLINGFILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOGDIR}/${APP_NAME}.%d{dd-MM-yyyy}.log</fileNamePattern>
+            <maxHistory>90</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <charset>utf-8</charset>
+            <Pattern>%d ${APP_NAME} %-5level [%thread] %logger: %msg%n</Pattern>
+        </encoder>
+    </appender>
+        <logger name="br.com.multiinovacoes.gcon" additivity="false" level="debug">
+            <appender-ref ref="CONSOLE"/>
+        </logger>
+      
+        <logger name="br.com.multiinovacoes.gcon" additivity="false" level="info">
+            <appender-ref ref="ROLLINGFILE"/>
+        </logger>
+   
+</configuration>
